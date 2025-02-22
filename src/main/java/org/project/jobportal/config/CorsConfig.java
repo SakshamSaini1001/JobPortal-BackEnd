@@ -14,7 +14,7 @@ public class CorsConfig {
     public CorsFilter corsFilter() {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
-        config.setAllowedOrigins(List.of("http://localhost:3000"),("https://job-portal-front-end-green.vercel.app"); // Adjust for production
+        config.setAllowedOrigins(List.of("http://localhost:3000"),("https://job-portal-front-end-green.vercel.app")); // Adjust for production
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
 
