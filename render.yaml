@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: jobportal
+    runtime: docker
+    repo: https://github.com/your-username/jobportal
+    branch: main
+    envVars:
+      - key: JAVA_VERSION
+        value: 21
+      - key: MONGO_URI
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
